@@ -18,3 +18,6 @@ def parse_fasta(file_path: str) -> list[dir]:
     with open(file_path, "r") as file:
         for line in file:
             line = line.strip()
+
+            if not line:
+                continue
