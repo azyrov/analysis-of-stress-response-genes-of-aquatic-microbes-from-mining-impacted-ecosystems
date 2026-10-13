@@ -21,3 +21,13 @@ def parse_fasta(file_path: str) -> list[dir]:
 
             if not line:
                 continue
+
+            if line.startswith(">"):
+                if current_header is not None:
+                    full_seq = "".join(current_seq_lines)
+                    records.append({
+                        "header": current_header,
+                        "length": len(full_seq),
+                        "gc-content": calculate_gc_content(full_seq),
+                        "sequence": full_seq
+                    })
