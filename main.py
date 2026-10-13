@@ -31,3 +31,10 @@ def parse_fasta(file_path: str) -> list[dir]:
                         "gc-content": calculate_gc_content(full_seq),
                         "sequence": full_seq
                     })
+
+                current_header = line[1:]
+                current_seq_lines = []
+
+            else:
+                current_seq_lines.append(line)
+                
