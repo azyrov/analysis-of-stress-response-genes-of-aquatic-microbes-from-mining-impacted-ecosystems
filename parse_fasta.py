@@ -69,3 +69,10 @@ def export_to_csv(records: list[dict], output_path: str) -> None:
             writer.writerow(record)
             
     print(f"Successfully exported {len(records)} records to {output_path}")
+
+if __name__ == "__main__":
+    input_fasta = "galamsey_strains.fasta"
+    output_csv = "microbial_metrics.csv"
+    
+    parsed_records = parse_fasta(input_fasta)
+    export_to_csv(parsed_records, output_csv)
