@@ -1,0 +1,3 @@
+Organism Scientific Name	Organism Common Name	Organism Qualifier	Taxonomy id	Assembly Name	Assembly Accession	Source	Annotation	Level	Contig N50	Size	Submission Date	Gene Count	BioProject	BioSample
+Cupriavidus metallidurans CH34		strain: CH34	266264	ASM19601v1	GCA_000196015.1	GenBank	Annotation submitted by DOE Joint Genome Institute	Complete Genome	3928089	6913352	2010-02-04	6832	PRJNA250	SAMN02598450
+Cupriavidus metallidurans CH34		strain: CH34	266264	ASM19601v1	GCF_000196015.1	RefSeq	GCF_000196015.1-RS_2025_12_23	Complete Genome	3928089	6913352	2010-02-04	6412	PRJNA250	SAMN02598450
